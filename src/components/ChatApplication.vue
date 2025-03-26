@@ -369,8 +369,6 @@
   
   </template>
     <style scoped>
- 
-
 * {
   scrollbar-width: none; 
   -ms-overflow-style: none; 
@@ -533,15 +531,6 @@
   position: relative;
   align-items: center;
 }
-
-/* .profile img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
-  object-fit: cover;
-}    */
-
 .profile-info {
   flex-grow: 1;
 }
@@ -590,15 +579,6 @@
 .contact:hover {
   background-color: #f9f9f9;
 }
-
-/* .contact img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
-  object-fit: cover;
-}  */
-
 .contact-info {
   flex-grow: 1;
   overflow: hidden;
@@ -632,37 +612,31 @@
 
 .chat-container {
   display: flex;
-  height: 100%;
+  height: 90%;
+  width: 100%;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
-/* .contact img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
-  object-fit: cover;
-} */
+
 .divider {
   width: 1px;
   background-color: #E0E6EB;
   height: 100%;
 }
 .chat-column {
-  width: 50%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   border-right: 1px solid #FFFFFF;
   padding: 15px;
-  overflow: visible; /* ضمان عرض كامل للمحتوى */
+  overflow: visible; 
 }
 
 .chat-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 12px 15px; */
   border-bottom: 1px solid #FFFFFF;
   background-color: #ffff;
 }
@@ -675,7 +649,7 @@
   width: 100%;
   height: 1px;
   background-color: #E0E6EB;
-  margin: 5px 0; /* مسافة من الأعلى والأسفل */
+  margin: 5px 0; 
   position: container;
 }
 
@@ -683,7 +657,7 @@
 .user-info {
   display: flex;
   align-items: center;
-  gap: 8px; /* مسافة بين الصورة والنص */
+  gap: 8px;
   font-size: 14px;
   color: #333;
 }
@@ -691,7 +665,7 @@
 .user-avatar {
   width: 40px;
   height: 40px;
-  border-radius: 50%; /* يجعل الصورة دائرية */
+  border-radius: 50%;
 }
 
 .time-ago {
@@ -744,13 +718,14 @@
 }
 
  .messages {
+  border-radius: 6px; 
   flex-grow: 1;
   padding: 15px;
   overflow-y: auto;
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
-}
+}  
 
  .message-timestamp {
   display: flex;
@@ -766,32 +741,24 @@
   border-radius: 50%;
   margin-right: 8px;
 } 
-
-.message {
-  margin-bottom: 10px;
-  max-width: 70%;
-  padding: 10px 12px;
-  border-radius: 15px;
-  position: relative;
-  line-height: 1.4;
-}
-
 .message p {
   margin: 0;
   font-size: 13px;
 }
-
 .message-time {
-  font-size: 11px;
-  color: #888;
-  margin-top: 3px;
+  font-size: 10px; 
+  color: gray;
   text-align: right;
-} 
+  margin-top: 3px;
+}
 
   .received {
   align-self: flex-start;
   color: #333;
   border-bottom-left-radius: 4px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 60%;
 }  
 .received-image {
 background:none ;
@@ -805,23 +772,24 @@ background:none ;
 .time-ago {
   font-size: 12px;
   color: gray;
-  margin-bottom: 4px; /* مسافة بين الوقت والرسالة */
+  margin-bottom: 4px; 
 }
 
- .message.sent {
+  .message.sent {
   background-color: #ECFDFD;
   padding: 10px;
   border-radius: 10px;
   max-width: 60%;
-} 
+}  
 
 .horizontal-divider {
+ 
   width: 100%;
   height: 1px;
   background-color: #E0E6EB;
-  margin: 0px 0; /* مسافة من الأعلى والأسفل */
+  margin: 0px 0; 
   position: container;
-}
+} *
 
 .chat-footer {
   display: flex;
@@ -853,11 +821,12 @@ background:none ;
   caret-color: black;
 } 
 .divider {
+  display: flex;
   width: 1px;
   background-color: #E0E6EB;
   height: 100%;
 }
-/* Media column */
+  
 .media-column {
   width: 25%;
   padding: 15px;
@@ -983,5 +952,4 @@ background:none ;
   border: none;
   color: #212529;
 }
-
     </style> 
